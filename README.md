@@ -1,11 +1,40 @@
-##### 🎥 CineApp: Plataforma de Gestión de Contenidos (Flask)
+# 🎥 CineApp: Arquitectura Backend con Flask
 
-> **Nota del desarrollador:** Este repositorio se encuentra temporalmente en modo "Case Study" mientras se completa la migración de la lógica de integración a proveedores de contenido 100% legales (TMDb y YouTube SDK).
+Este repositorio funciona como un **Case Study** sobre el desarrollo de una plataforma de gestión de contenidos utilizando Python y Flask. El foco principal del proyecto es la implementación de un backend sólido y la aplicación del patrón arquitectónico MVC.
 
-**Retos Técnicos Resueltos:**
+> **Refactorización en curso:** El código fuente se encuentra en un repositorio privado mientras se migra la integración de servicios hacia APIs oficiales (YouTube SDK) y se optimiza la capa de modelos.
 
-* **Abstracción de Endpoints:** Desarrollo de una arquitectura en Flask que separa la lógica de negocio del consumo de APIs externas.
+---
 
-* **UX/UI:** Diseño de una interfaz fluida para el descubrimiento de películas.
+## 🛠️ Stack Tecnológico
 
-* **Seguridad:** Implementación de variables de entorno para la gestión de credenciales sensibles.
+* **Backend:** Python & Flask.
+* **Arquitectura:** MVC (Model-View-Controller).
+* **Frontend:** Jinja2 Templates & CSS personalizado.
+* **API Integration:** Consumo de TMDb API desde el servidor (Python requests).
+
+---
+
+## 💡 Desafíos de Ingeniería Backend
+
+### 1. Patrón MVC y Modularidad
+A diferencia de aplicaciones monolíticas simples, CineApp separa la lógica de las rutas (Controller), el renderizado de plantillas (View) y la gestión de datos (Model). Esto facilita el mantenimiento y la escalabilidad del sistema.
+
+### 2. Abstracción de Endpoints Externos
+Desarrollé una capa de servicios en Python para centralizar las llamadas a la API de TMDb. Esto permite que, si la API externa cambia, solo sea necesario modificar un archivo en el servidor, sin afectar al resto de la aplicación.
+
+### 3. Gestión de Seguridad y Entorno
+Implementación de `python-dotenv` para proteger las API Keys y configuraciones del servidor, garantizando que ninguna credencial sensible sea expuesta en el historial de versiones.
+
+---
+
+## 📸 Análisis de Interfaz (Desktop & Web)
+
+*(Espacio para capturas de pantalla que muestren el renderizado de Jinja2)*
+
+---
+
+## 🚀 Roadmap de Mejora
+* **Migración a SQLAlchemy:** Implementación de un ORM para persistencia de datos de usuario.
+* **Caché de Servidor:** Implementación de Redis o caché simple para reducir las llamadas repetitivas a la API externa.
+* **Integración Legal:** Conexión final con YouTube Player API para trailers.
