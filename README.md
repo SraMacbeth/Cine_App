@@ -10,7 +10,7 @@ Este repositorio funciona como un **Case Study** sobre el desarrollo de una plat
 
 * **Backend:** Python & Flask.
 * **Arquitectura:** MVC (Model-View-Controller).
-* **Frontend:** Jinja2 Templates & CSS personalizado.
+* **Frontend:** CSS personalizado.
 * **API Integration:** Consumo de TMDb API desde el servidor (Python requests).
 
 ---
@@ -30,7 +30,7 @@ Implementación de `python-dotenv` para proteger las API Keys y configuraciones 
 
 ## 📸 Análisis de Interfaz (Desktop & Web)
 
-*(Espacio para capturas de pantalla que muestren el renderizado de Jinja2)*
+*(Espacio para capturas de pantalla)*
 
 ---
 
