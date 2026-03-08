@@ -9,6 +9,3 @@
 * **UX/UI:** Diseño de una interfaz fluida para el descubrimiento de películas.
 
 * **Seguridad:** Implementación de variables de entorno para la gestión de credenciales sensibles.
-
-**[Ver Galería de Capturas de Pantalla]**
-*()*
